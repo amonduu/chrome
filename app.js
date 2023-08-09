@@ -1,10 +1,21 @@
-const player = {
-    name: "nico", 
-    sayHello: function(name){
-        console.log("hello " + name)
+// a+b, a-b, a/b, a**b 기능
+
+const calculator = {
+    add: function(a, b) {
+        console.log(a+b);
+    },
+    min: function(a, b) {
+        console.log(a-b);
+    },
+    div: function(a, b) {
+        console.log(a/b);
+    },
+    squ: function(a, b) {
+        console.log(a**b);
     },
 };
 
-console.log(player.name);
-player.sayHello("kim");
-player.sayHello("susu");
+calculator.add(54, 16);
+calculator.min(64, 23);
+calculator.div(53, 12);
+calculator.squ(4, 8);
